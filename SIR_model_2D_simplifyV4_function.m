@@ -2,12 +2,12 @@
 % close all;
 function []=SIR_model_2D_simplifyV4_function(name,eta)
 %% define parameters
-dt=1;                  %time step in unit of seconds
-dx=100;                  %spacial grids in unit of um
+dt=1;                  
+dx=100;                 
 dy=100;
-Time=60*60*40;         %simulated time;
-T=round(Time/dt);       %time steps
-LX=120000;             % range of plate
+Time=60*60*40;        
+T=round(Time/dt);       
+LX=120000;            
 LY=120000;
 LX0=LX/2; 
 LY0=LY/2;
@@ -20,19 +20,19 @@ Rg1=2000;
 Rg2=1000;
 
 
-K1=3.5;                 %receptor sensing range in unit of uM 
-K2=1000;                %receptor sensing range in unit of uM
-Sk=1;                % attractant consumption half threshold in unit of uM
-Nk=5;                % nutrient consumption half threshold 
+K1=3.5;               
+K2=1000;              
+Sk=1;                
+Nk=5;                
 Nk_2=Nk*Nk;
 Yn=0.06;
 
 
-Dn=800;               % diffusion of small molecules %A method for the determination of diffusion coefficients for small molecules in aqueous solution, Analytical Biochemistry,Volume 166, Issue 2, 1 November 1987, Pages 335-341 
-Da=800;              % diffusion of small molecules %A method for the determination of diffusion coefficients for small molecules in aqueous solution, Analytical Biochemistry,Volume 166, Issue 2, 1 November 1987, Pages 335-341
-G0=4/60;        % basal consumption of attractant 9uM/min for OD 1 cells.
-Nutr_init=30;            % initial nutrient concentration in unit of effective cell OD
-Attr_init=100;          % initial attractant concentration in unit of uM
+Dn=800;               
+Da=800;              
+G0=4/60;        
+Nutr_init=30;            
+Attr_init=100;       
 bacter_init=0.2;
 phage_init=0.001;
 
@@ -49,8 +49,7 @@ beta2=0.8;
 theta=5E-4;
 
 %% initial conditions
-% 
-% load('C_tar35Simu_initP=1E-3_diff=30_K=3.5_PR=10_chi=180_eta=15_30.mat')
+
 
 
 
