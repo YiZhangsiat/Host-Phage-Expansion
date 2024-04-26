@@ -1,9 +1,6 @@
 clear all;
 close all;
 
-
-
-% 
 % SIR_model_2D_simplifyV4_function('L=9cm_chi=370_alpha=50.mat',43);
 A1_value=[7,9,11,13,15];
 parfor i=1:length(A1_value)
