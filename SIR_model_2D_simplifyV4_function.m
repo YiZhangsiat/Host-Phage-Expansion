@@ -51,8 +51,6 @@ theta=5E-4;
 %% initial conditions
 
 
-
-
 Cell_den_S=zeros(round(LX/dx),round(LY/dy));
 Cell_den_I=zeros(round(LX/dx),round(LY/dy));
 Cell_den_R=zeros(round(LX/dx),round(LY/dy));
